@@ -15,5 +15,5 @@ spec:
     - containerPort: 11021
       hostPort: 11021
     command: ["/app"]
-    args: ["--warm-up-time", "2m", "--run-time", "5m", "--worker", "128", "--bucket", "$BUCKET_NAME" ,"--client-protocol", "$PROTOCOL"]
+    args: ["--warm-up-time", "2m", "--run-time", "30m", "--worker", "128", "--bucket", "$BUCKET_NAME" ,"--client-protocol", "$PROTOCOL"]
   serviceAccountName: default
